@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="https://i.postimg.cc/CxktNWDx/Logo-curta-pts.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Portal do SESI Camaragibe</title>
+</head>
+<body>
+  <div class="content">
+    <a href="#"><img src="https://i.postimg.cc/SKjtmCm1/Design-sem-nome-2-removebg-preview.png" alt="logo"></a>
+    <div class="login">
+      <input type="text" id="usuario" placeholder="E-mail">
+      <p id="msgError"></p>
+      <input type="password" id="senha" placeholder="Senha">
+      <p id="msgError1"></p>
+      <button onclick="entrar()">Entrar</button>
+      <p style="text-align: center;">Não possui uma conta? | <a class="log-cad" href="#" style="color: #1E61C8">Cadastrar-se</a></p>
+    </div>
+    <div class="cadastro">
+      <p id="labelNome">Nome</p>
+      <input type="text" id="nome">
+      <p id="labelUsuario1">E-mail</p>
+      <input type="text" id="usuario1">
+      <p id="labelSenha1">Senha</p>
+      <input type="password" id="senha1">
+      <p id="labelConfirmSenha">Confirme senha</p>
+      <input type="password" id="confirmSenha">
+      <p id="errinho"></p>
+      <button onclick="cadastrar()">Cadastrar</button>
+      <p style="text-align: center;">Já possui uma conta? | <a class="cad-ent" href="#" style="color: #1E61C8">Entrar</a></p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
