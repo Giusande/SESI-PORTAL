@@ -112,7 +112,7 @@ section .noticias{
   cursor: pointer;
   border-radius: 10px;
   position: relative;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 section .noticias:hover{
