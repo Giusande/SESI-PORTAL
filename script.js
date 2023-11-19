@@ -24,3 +24,7 @@ function logout(){
   localStorage.removeItem('token');
   window.location.href = "https://giusande.github.io/SESI-PORTAL/"
 }
+
+perfilog.addEventListener('click', () => {
+  window.location.href = "./perfil/"
+})
