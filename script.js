@@ -1,7 +1,6 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado'))
 
 if(localStorage.getItem('token') == null){
-  alert('Você precisa fazer o login para acessar esse site!');
   window.location.href = "./login/index.html"
 }
 
