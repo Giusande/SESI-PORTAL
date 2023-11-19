@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body{
+    background: #f9f9f9;
+  }
+  
+  .mobile{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 300px;
+    z-index: 999;
+    box-shadow: 0 0 3em #0047B6;
+    transition: 0.5s;
+    padding: 10px;
+  }
+  
+  .mobile i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000000;
+  }
+  
+  .mobile ul{
+    position: relative;
+    top: -70px;
+  }
+  
+  .mobile ul a{
+    color: #000000;
+  }
+  
+  .mobile ul h4{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .mobile ul li{
+    font-size: 20px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #dedede;
+  }
+  
+  .mobile a img{
+    position: relative;
+    left: 50%;
+    top: -50px;
+    transform: translatex(-50%);
+  }
+  
+  .mobile.active{
+    left: 0;
+  }
+  
+  header{
+    width: 100%;
+    height: 80px;
+    background: #0047B6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header i{
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  header a img{
+    width: 200px;
+  }
+  
+  section{
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translatex(-50%);
+    width: 90%;
+    max-width: 450px;
+  }
+  
+  section .conta-info{
+    width: 100%;
+    border: 0.5px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  section h1{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  section .conta-info .info h1{
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  
+  section button{
+    padding: 7px;
+    width: 100%;
+    border-radius: 7px;
+    border: 0;
+    color: #FFFFFF;
+    background: #1E61C8;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s
+  }
+  
+  section button:hover{
+    color: #1E61C8;
+    background: transparent;
+    border: 1px solid #1E61C8;
+  }
+  
+  section .conta-info .info p{
+    color: #00000090
+  }
+  
+  section .conta-info img{
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  .user{
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .user button{
+    padding: 5px;
+    width: 70px;
+    border-radius: 7px;
+    border: 0;
+    color: #FFFFFF;
+    background: #1E61C8;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  footer{
+    width: 100%;
+    height: 40px;
+    background: #0047B6;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+  }
+  
+  footer img{
+    width: 88px;
+  }
+  
+  footer p{
+    font-size: 12px;
+  }
+  
+  @media(max-width: 700px) {
+    header a img{
+      width: 180px;
+    }
+    
+    footer{
+      flex-direction: column;
+      height: 70px;
+    }
+    
+    footer img{
+      width: 100px;
+    }
+  }
