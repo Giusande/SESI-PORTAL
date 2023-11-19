@@ -25,6 +25,7 @@ function logout(){
   window.location.href = "https://giusande.github.io/SESI-PORTAL/"
 }
 
+var perfilog = document.getElementById("perfil-log");
 perfilog.addEventListener('click', () => {
   window.location.href = "./perfil/"
 })
