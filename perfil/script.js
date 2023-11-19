@@ -25,3 +25,7 @@ email.innerHTML = userLogado.user;
 function logout(){
   window.location.href = '../login/'
 }
+
+perfilog.addEventListener('click', () => {
+  window.location.href = "./perfil/"
+})
