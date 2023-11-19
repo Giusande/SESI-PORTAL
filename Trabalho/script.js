@@ -27,5 +27,5 @@ function logout(){
 
 var perfilog = document.getElementById("perfil-log");
 perfilog.addEventListener('click', () => {
-  window.location.href = "./perfil/"
+  window.location.href = "../perfil/"
 })
