@@ -1,12 +1,19 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado'))
 
 if(localStorage.getItem('token') == null){
-  window.location.href = "./login/index.html"
+  window.location.href = "../login/"
 }
 
 let logado = document.querySelector('#logado')
 
 logado.innerHTML = 'Olá, ' + userLogado.nome;
+
+let nome = document.querySelector('#nome')
+let email = document.querySelector('#email')
+
+nome.innerHTML = 'Olá, ' + userLogado.nome;
+
+email.innerHTML = userLogado.user;
 
 var x = document.querySelector('#x');
 var menu = document.querySelector('#menu');
