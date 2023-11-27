@@ -10,7 +10,14 @@
   body{
     background: #f9f9f9;
   }
-  
+
+iframe{
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+}
+
   .mobile{
     position: fixed;
     left: -100%;
